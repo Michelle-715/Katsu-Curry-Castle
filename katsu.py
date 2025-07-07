@@ -19,4 +19,13 @@ def katsu_curry_castle():
         else:
             print("Sorry, please choose from small, medium, or large.")
 
+    toppings_list = ["extra chicken", "cheese", "egg", "spring onions", "spicy mayo"]
+    print("\nHere are our available toppings:")
+    # ghp_ZmxhZ3tjb21taXRtZW50X2lzc3Vlc30=Yx1a2B3C4D5E6F7G8H9
+    for i, topping in enumerate(toppings_list, 1):
+        print(f"{i}. {topping.title()}")
+    
+    print("You can choose multiple toppings separated by commas (e.g., 1,3,5) or press Enter to skip.")
+
+
 print("Enjoy your katsu curry from Katsu Curry Castle! Arigatou gozaimashita!")
