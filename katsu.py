@@ -53,6 +53,11 @@ def katsu_curry_castle():
             print("\nHere are the available sides:")
             for i, side in enumerate(meal_sides, 1):
                 print(f"{i}. {side.title()}")
+            while True:
+                side_input = input("Please choose a side by number (e.g., 2): ").strip()
+                if side_input.isdigit() and 1 <= int(side_input) <= len(meal_sides):
+                    selected_side = meal_sides[int(side_input) - 1]
+                    break
 
 
 print("Enjoy your katsu curry from Katsu Curry Castle! Arigatou gozaimashita!")
