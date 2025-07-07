@@ -58,6 +58,8 @@ def katsu_curry_castle():
                 if side_input.isdigit() and 1 <= int(side_input) <= len(meal_sides):
                     selected_side = meal_sides[int(side_input) - 1]
                     break
+                else:
+                    print("Invalid selection. Please enter a number from the list.")
 
 
 print("Enjoy your katsu curry from Katsu Curry Castle! Arigatou gozaimashita!")
