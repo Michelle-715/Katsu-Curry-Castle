@@ -71,6 +71,16 @@ def katsu_curry_castle():
             break
         else:
             print("Please answer 'yes' or 'no'.")
-
-
-print("Enjoy your katsu curry from Katsu Curry Castle! Arigatou gozaimashita!")
+        
+    print("\n Order Summary ")
+    print(f"Size: {size.title()}")
+    if selected_toppings:
+        print("Toppings: " + ", ".join(t.title() for t in selected_toppings))
+    else:
+        print("No toppings selected.")
+    if selected_side:
+        print(f"Meal Side: {selected_side.title()}")
+        print(f"Upsized: {'Yes' if upsized else 'No'}")
+    else:
+        print("No meal added.")
+    print("Thank you for your order. Enjoy your katsu curry from Katsu Curry Castle! Arigatou gozaimashita!")
